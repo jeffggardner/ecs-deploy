@@ -2,9 +2,8 @@ FROM alpine:3.7
 
 # Install packges needed
 RUN apk --no-cache add ca-certificates curl bash jq py2-pip && \
-    pip install awscli
+    pip install git+git://github.com:aws/aws-cli.git@develop
 
-RUN pip uninstall docutils && pip install docutils==0.14
 COPY ecs-deploy /ecs-deploy
 RUN chmod a+x /ecs-deploy
 
