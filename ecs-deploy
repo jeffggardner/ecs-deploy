@@ -612,7 +612,6 @@ if [ "$BASH_SOURCE" == "$0" ]; then
     echo "Using image name [jeffg]: $useImage"
     python --version
     which python
-    which python3
 
     # Get current task definition
     getCurrentTaskDefinition
