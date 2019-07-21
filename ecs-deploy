@@ -614,7 +614,7 @@ if [ "$BASH_SOURCE" == "$0" ]; then
     which python
     pip list | grep docutils
     pip uninstall docutils
-    pip install docutils=0.10
+    pip install -y docutils=0.10
     pip list | grep docutils
 
     # Get current task definition
