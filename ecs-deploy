@@ -613,8 +613,6 @@ if [ "$BASH_SOURCE" == "$0" ]; then
     python --version
     which python
     which python3
-    alias python=`which python3`
-    which python
 
     # Get current task definition
     getCurrentTaskDefinition
