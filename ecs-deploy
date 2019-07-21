@@ -610,6 +610,7 @@ if [ "$BASH_SOURCE" == "$0" ]; then
     # Determine image name
     parseImageName
     echo "Using image name [jeffg]: $useImage"
+    python --version
 
     # Get current task definition
     getCurrentTaskDefinition
