@@ -612,8 +612,7 @@ if [ "$BASH_SOURCE" == "$0" ]; then
     echo "Using image name [jeffg]: $useImage"
     python --version
     which python
-    echo 'aws --version'
-    aws --version
+    pip list | grep docutils
 
     # Get current task definition
     getCurrentTaskDefinition
