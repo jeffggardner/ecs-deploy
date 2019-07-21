@@ -613,7 +613,7 @@ if [ "$BASH_SOURCE" == "$0" ]; then
     python --version
     which python
     pip list | grep docutils
-    pip install docutils=0.14
+    pip install docutils==0.14
     pip list | grep docutils
 
     # Get current task definition
