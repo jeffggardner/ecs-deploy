@@ -4,7 +4,7 @@ FROM alpine:3.7
 RUN apk --no-cache add ca-certificates curl bash jq py2-pip && \
     pip install awscli
 
-RUN pip install docutils==0.14
+RUN pip uninstall docutils && pip install docutils==0.14
 COPY ecs-deploy /ecs-deploy
 RUN chmod a+x /ecs-deploy
 
