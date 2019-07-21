@@ -609,7 +609,7 @@ if [ "$BASH_SOURCE" == "$0" ]; then
 
     # Determine image name
     parseImageName
-    echo "Using image name: $useImage"
+    echo "Using image name [jeffg]: $useImage"
 
     # Get current task definition
     getCurrentTaskDefinition
