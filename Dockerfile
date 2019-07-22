@@ -2,7 +2,7 @@ FROM alpine:3.5
 
 # Install packges needed
 RUN apk --no-cache add ca-certificates curl bash jq py2-pip && \
-    pip install git+git://github.com:aws/aws-cli.git@develop
+    pip install awscli
 
 COPY ecs-deploy /ecs-deploy
 RUN chmod a+x /ecs-deploy
